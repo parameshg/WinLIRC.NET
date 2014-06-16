@@ -7,9 +7,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("WinLIRC.Test")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("paramg.com")]
+[assembly: AssemblyCompany("Paramg")]
 [assembly: AssemblyProduct("WinLIRC.NET")]
-[assembly: AssemblyCopyright("Copyright © paramg.com 2014")]
+[assembly: AssemblyCopyright("Copyright © Paramg 2014")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
