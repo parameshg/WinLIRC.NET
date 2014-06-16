@@ -1,0 +1,1 @@
+sc create WinLIRC-Receiver binPath ="WinLIRC.Receiver.Daemon.exe"

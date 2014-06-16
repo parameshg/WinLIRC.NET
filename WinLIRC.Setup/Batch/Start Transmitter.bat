@@ -1,0 +1,1 @@
+sc start WinLIRC.NET-Transmitter

@@ -1,0 +1,1 @@
+sc stop WinLIRC.NET-Transmitter

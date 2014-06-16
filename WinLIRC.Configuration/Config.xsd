@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+		<xs:element name="irconfig">
+			<xs:complexType>
+				<xs:sequence>
+					<xs:element name="name" type="xs:string" />
+					<xs:element name="bits" type="xs:string" />
+					<xs:element name="flags" type="xs:string" />
+					<xs:element name="eps" type="xs:string" />
+					<xs:element name="aeps" type="xs:string" />
+					<xs:element name="header" type="xs:string" />
+					<xs:element name="three" type="xs:string" />
+					<xs:element name="two" type="xs:string" />
+					<xs:element name="one" type="xs:string" />
+					<xs:element name="zero" type="xs:string" />
+					<xs:element name="ptrail" type="xs:string" />
+					<xs:element name="plead" type="xs:string" />
+					<xs:element name="foot" type="xs:string" />
+					<xs:element name="repeat" type="xs:string" />
+					<xs:element name="pre_data_bits" type="xs:string" />
+          <xs:element name="pre_data" type="xs:string" />
+					<xs:element name="post_data_bits" type="xs:string" />
+					<xs:element name="post_data" type="xs:string" />
+					<xs:element name="pre" type="xs:string" />
+					<xs:element name="post" type="xs:string" />
+					<xs:element name="gap" type="xs:string" />
+					<xs:element name="repeat_gap" type="xs:string" />
+					<xs:element name="min_repeat" type="xs:string" />
+					<xs:element name="toggle_bit" type="xs:string" />
+					<xs:element name="frequency" type="xs:string" />
+					<xs:element name="duty_cycle" type="xs:string" />
+					<xs:element name="transmitter" type="xs:string" />
+					<xs:element name="remote_codes">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="codes" type="code" maxOccurs="unbounded" />
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+				</xs:sequence>
+			</xs:complexType>
+		</xs:element>
+		<xs:simpleType name="flag">
+			<xs:restriction base="xs:string">
+				<xs:enumeration value="RC5" />
+				<xs:enumeration value="RC6" />
+				<xs:enumeration value="RCMM" />				
+				<xs:enumeration value="SHIFT_ENC" />
+				<xs:enumeration value="SPACE_ENC" />
+				<xs:enumeration value="REVERSE" />
+				<xs:enumeration value="NO_HEAD_REP" />
+				<xs:enumeration value="NO_FOOT_REP" />
+				<xs:enumeration value="CONST_LENGTH" />
+				<xs:enumeration value="RAW_CODES" />
+				<xs:enumeration value="REPEAT_HEADER" />
+				<xs:enumeration value="SPECIAL_TRANSMITTER" />
+			</xs:restriction>
+		</xs:simpleType>		
+		<xs:complexType name="code">
+			<xs:sequence>
+				<xs:element name="name" type="xs:string"/>
+				<xs:element name="value" type="xs:string"/>
+				<xs:element name="key">
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:enumeration value="NUMBER1" />
+							<xs:enumeration value="NUMBER2" />
+							<xs:enumeration value="NUMBER3" />
+							<xs:enumeration value="NUMBER4" />
+							<xs:enumeration value="NUMBER5" />
+							<xs:enumeration value="NUMBER6" />
+							<xs:enumeration value="NUMBER7" />
+							<xs:enumeration value="NUMBER8" />
+							<xs:enumeration value="NUMBER9" />
+							<xs:enumeration value="NUMBER0" />				
+							<xs:enumeration value="ARROW_UP" />
+							<xs:enumeration value="ARROW_DOWN" />				
+							<xs:enumeration value="ARROW_LEFT" />
+							<xs:enumeration value="ARROW_RIGHT" />
+              <xs:enumeration value="CHANNEL_UP" />
+              <xs:enumeration value="CHANNEL_DOWN" />
+              <xs:enumeration value="VOLUME_UP" />
+              <xs:enumeration value="VOLUME_DOWN" />
+              <xs:enumeration value="RECORD" />
+              <xs:enumeration value="PLAY" />
+              <xs:enumeration value="PAUSE" />
+              <xs:enumeration value="STOP" />
+              <xs:enumeration value="MENU" />
+              <xs:enumeration value="SELECT" />
+							<xs:enumeration value="CANCEL" />
+							<xs:enumeration value="MUTE" />
+              <xs:enumeration value="UNKNOWN" />
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:schema>

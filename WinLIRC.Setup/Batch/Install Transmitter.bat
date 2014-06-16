@@ -1,0 +1,1 @@
+sc create WinLIRC-Transmitter binPath ="WinLIRC.Transmitter.Daemon.exe"
